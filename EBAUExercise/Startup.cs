@@ -48,10 +48,11 @@ namespace EBAUExercise
             }
 
             app.UseHttpsRedirection();
-
             app.UseRouting();
-
             app.UseAuthorization();
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
+            
 
             app.UseEndpoints(endpoints =>
             {

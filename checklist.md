@@ -1,7 +1,7 @@
 # Checklist
 
 - [X] Initialized repository
-- [ ] Compiled successfully
+- [X] Compiled successfully
 - [ ] **IOC exercise**
 	- [ ] Get tasks controller
 	- [ ] Do work

@@ -17,6 +17,7 @@ namespace EBAUExercise.Controllers
         [HttpGet]
         public IActionResult Get()
         {
+            CountingService.Reset();
             CountingService.Increment();
 
             return Ok(new

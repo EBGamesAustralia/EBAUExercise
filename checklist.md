@@ -2,11 +2,11 @@
 
 - [X] Initialized repository
 - [X] Compiled successfully
-- [ ] **IOC exercise**
+- [X] **IOC exercise**
 	- [X] Get tasks controller
 	- [X] Do work
 	- [X] Save mock data
-	- [ ] Reset
+	- [X] Reset
 - [ ] **Reports**
 	- [ ] Query order totals by customer
 	- [ ] Query order totals by date

@@ -3,9 +3,9 @@
 - [X] Initialized repository
 - [X] Compiled successfully
 - [ ] **IOC exercise**
-	- [ ] Get tasks controller
-	- [ ] Do work
-	- [ ] Save mock data
+	- [X] Get tasks controller
+	- [X] Do work
+	- [X] Save mock data
 	- [ ] Reset
 - [ ] **Reports**
 	- [ ] Query order totals by customer

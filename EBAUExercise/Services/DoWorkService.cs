@@ -13,6 +13,7 @@ namespace EBAUExercise.Services
 
         public bool DoWork()
         {
+            Services.CountingService.Increment();
             return _mockDataRepository.Save();
         }
     }

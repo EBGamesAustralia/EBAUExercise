@@ -17,12 +17,12 @@ namespace EBAUExercise.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            // eg. CountingService.Increment()
+            CountingService.Increment();
 
             return Ok(new
             {
                 IsDataSaved = _doWorkService.DoWork(),
-                Count = 1 // return the current value of the counter here.
+                Count = CountingService.Get()
             });
         }
     }

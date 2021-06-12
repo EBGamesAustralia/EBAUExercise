@@ -27,14 +27,17 @@ function sendDatesQueryRequest()
 function displayQueryResultTable(colList, propList, rowArray)
 {
 	var containerElement = document.getElementById("outputContainer");
+	var breakElement = document.createElement("br");
 	var tableElement = document.createElement("table");
 	
-	tableElement.className = "table";
+	tableElement.id = "dataTable";
+	tableElement.className = "table table-responsive table-bordered border-primary";
 	
 	containerElement.innerHTML = "";
 	writeHeaderRow(tableElement, colList);
 	writeBodyRows(tableElement, propList, rowArray);
 	
+	containerElement.appendChild(breakElement);
 	containerElement.appendChild(tableElement);
 }
 
@@ -51,7 +54,7 @@ function writeHeaderRow(tblObject, colsObject)
 	for (columnIndex = 0; columnIndex < colsObject.length; columnIndex = columnIndex + 1)
 	{
 		currentColumnName = colsObject[columnIndex];
-		currentColumnElement = document.createElement("td");
+		currentColumnElement = document.createElement("th");
 		
 		currentColumnElement.innerHTML = currentColumnName;
 		currentColumnElement.setAttribute("scope", "col");

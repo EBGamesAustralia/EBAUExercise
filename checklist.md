@@ -13,6 +13,6 @@
 	- [X] Implement report controller
 - [ ] **API front-end**
 	- [X] Structure
-	- [ ] Functionality
+	- [X] Functionality
 	- [ ] Styling
 - [ ] Submit

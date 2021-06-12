@@ -5,6 +5,7 @@
 		<title>EB Games - tjohnston</title>
 		<script src="./js/bootstrap.min.js"></script>
 		<script src="./js/req-basic.js"></script>
+		<script src="./js/req-reports.js"></script>
 		<link rel="stylesheet" href="./css/bootstrap.min.css">
 	</head>
 	<body>
@@ -20,8 +21,8 @@
 			<div class="btn-group-vertical">
 				<button id="btnHelloWorld" class="btn btn-outline-dark btn-sm" type="button" onclick="sendHelloWorldRequest();">Hello World</button>
 				<button id="btnIOC" class="btn btn-outline-dark btn-sm" type="button" onclick="sendIocRequest();">IOC Exercise</button>
-				<button id="btnCustReport" class="btn btn-outline-dark btn-sm" type="button" onclick="">Report 1 - Order totals by Customer</button>
-				<button id="btnDateReport" class="btn btn-outline-dark btn-sm" type="button" onclick="">Report 2 - Order totals by Date</button>
+				<button id="btnCustReport" class="btn btn-outline-dark btn-sm" type="button" onclick="sendCustomersQueryRequest();">Report 1 - Order totals by Customer</button>
+				<button id="btnDateReport" class="btn btn-outline-dark btn-sm" type="button" onclick="sendDatesQueryRequest();">Report 2 - Order totals by Date</button>
 			</div>
 			
 			<br><br>

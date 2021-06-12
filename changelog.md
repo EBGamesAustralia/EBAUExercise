@@ -1,3 +1,4 @@
 # Changelog
 
-Wrote functionality for 'Clear' button.
+* Displayed results for query report endpoints.
+* Ticked: 'API front-end / Functionality'

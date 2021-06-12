@@ -11,8 +11,8 @@
 	- [ ] Query order totals by customer
 	- [ ] Query order totals by date
 	- [X] Implement report controller
-- [ ] **API front-end**
+- [X] **API front-end**
 	- [X] Structure
 	- [X] Functionality
-	- [ ] Styling
+	- [X] Styling
 - [ ] Submit

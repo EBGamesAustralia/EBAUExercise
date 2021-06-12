@@ -1,6 +1,6 @@
 function clearOutputSection()
 {
-	document.getElementById("outputContainer").innerHTML = "";
+	document.getElementById("outputDisplay").innerHTML = "";
 }
 
 
@@ -10,7 +10,7 @@ function sendHelloWorldRequest()
 	.then(function(response)
 	{
 		var outputText = response.status + " - " + response.statusText;
-		document.getElementById("outputContainer").innerHTML = outputText;
+		document.getElementById("outputDisplay").innerHTML = outputText;
 	});
 }
 
@@ -21,7 +21,7 @@ function sendIocRequest()
 	.then(response => response.json())
 	.then(function(data)
 	{
-		var containerElement = document.getElementById("outputContainer");
+		var containerElement = document.getElementById("outputDisplay");
 		containerElement.innerHTML = "";
 		addTaskField("Saved", data.isDataSaved, containerElement);
 		addTaskField("Increment Count", data.count, containerElement);

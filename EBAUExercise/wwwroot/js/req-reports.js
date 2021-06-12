@@ -26,18 +26,15 @@ function sendDatesQueryRequest()
 
 function displayQueryResultTable(colList, propList, rowArray)
 {
-	var containerElement = document.getElementById("outputContainer");
-	var breakElement = document.createElement("br");
+	var containerElement = document.getElementById("outputDisplay");
 	var tableElement = document.createElement("table");
 	
-	tableElement.id = "dataTable";
 	tableElement.className = "table table-responsive table-bordered border-primary";
 	
 	containerElement.innerHTML = "";
 	writeHeaderRow(tableElement, colList);
 	writeBodyRows(tableElement, propList, rowArray);
 	
-	containerElement.appendChild(breakElement);
 	containerElement.appendChild(tableElement);
 }
 

@@ -1,5 +1,6 @@
 # Changelog
 
-* Added test Controller with multiple routes:
-	* GET '/message/one'
-	* GET '/message/two'
+* Defined classes for data query output rows:
+	* TotalCustomerRow
+	* TotalDateRow
+* Files are located in: './EBAUExercise/Models/'

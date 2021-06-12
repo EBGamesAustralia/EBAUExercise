@@ -1,3 +1,3 @@
 # Changelog
 
-Installed Bootstrap v5.0.1
+Incorporated Bootstrap into front-end HTML.

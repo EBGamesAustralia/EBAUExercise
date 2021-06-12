@@ -1,24 +1,34 @@
 <html>
 	<head>
+		<meta charset="utf8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>EB Games - tjohnston</title>
 		<script src="./js/bootstrap.min.js"></script>
-		<link rel="stylesheet" href="./bootstrap.min.css">
+		<link rel="stylesheet" href="./css/bootstrap.min.css">
 	</head>
 	<body>
-		<div id="header">
-			<h1>EB Games Australia Developer Exercise</h1>
-			Submission by <a href="https://github.com/tjohnston-softdev">@tjohnston-softdev</a>
+		
+		<div class="container-fluid">
+			<div id="header">
+				<h1>EB Games Australia Developer Exercise</h1>
+				<p>Submission by <a href="https://github.com/tjohnston-softdev">@tjohnston-softdev</a></p>
+			</div>
+			
+			<br>
+			
+			<div class="btn-group-vertical">
+				<button id="btnHelloWorld" class="btn btn-outline-dark btn-sm" type="button" onclick="">Hello World</button>
+				<button id="btnIOC" class="btn btn-outline-dark btn-sm" type="button" onclick="">IOC Exercise</button>
+				<button id="btnCustReport" class="btn btn-outline-dark btn-sm" type="button" onclick="">Report 1 - Order totals by Customer</button>
+				<button id="btnDateReport" class="btn btn-outline-dark btn-sm" type="button" onclick="">Report 2 - Order totals by Date</button>
+			</div>
+			
+			<br><br>
+			<div id="outputContainer"></div>
+			<br>
+			<button id="btnClear" class="btn btn-outline-dark btn-sm" type="button" onclick="">Clear</button>
+			
 		</div>
-		
-		<button id="btnHelloWorld" type="button" onclick="">Hello World</button>
-		<button id="btnIOC" type="button" onclick="">IOC Exercise</button>
-		<button id="btnCustReport" type="button" onclick="">Report 1 - Order totals by Customer</button>
-		<button id="btnDateReport" type="button" onclick="">Report 2 - Order totals by Date</button>
-		<button id="btnClear" type="button" onclick="">Clear Output</button>
-		
-		<br><br>
-		
-		<div id="outputContainer"></div>
 		
 	</body>
 </html>	

@@ -1,6 +1,6 @@
 # Changelog
 
-* Defined classes for data query output rows:
-	* TotalCustomerRow
-	* TotalDateRow
-* Files are located in: './EBAUExercise/Models/'
+* Added children to 'API front-end' in checklist:
+	* Structure
+	* Functionality
+	* Styling

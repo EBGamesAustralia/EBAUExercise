@@ -1,3 +1,3 @@
 # Changelog
 
-Displayed 'IOC Exercise' endpoint result.
+Wrote functionality for 'Clear' button.

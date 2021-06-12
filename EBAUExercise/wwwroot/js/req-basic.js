@@ -1,3 +1,9 @@
+function clearOutputSection()
+{
+	document.getElementById("outputContainer").innerHTML = "";
+}
+
+
 function sendHelloWorldRequest()
 {
 	fetch("/message/one")

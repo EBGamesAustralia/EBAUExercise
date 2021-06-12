@@ -10,7 +10,7 @@
 - [ ] **Reports**
 	- [ ] Query order totals by customer
 	- [ ] Query order totals by date
-	- [ ] Implement report controller
+	- [X] Implement report controller
 - [ ] **API front-end**
 	- [ ] Structure
 	- [ ] Functionality

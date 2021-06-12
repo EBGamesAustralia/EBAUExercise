@@ -29,8 +29,17 @@ namespace EBAUExercise.Models
 			pTotalAmount += inpCost;
 		}
 		
-		public int customerID {get; set;}
-		public int orderCount {get; set;}
-		public decimal totalAmount {get; set;}
+		public int customerID
+		{
+			get {return pCustomerID;}
+		}
+		public int orderCount
+		{
+			get {return pOrderCount;}
+		}
+		public decimal totalAmount
+		{
+			get {return pTotalAmount;}
+		}
 	}
 }

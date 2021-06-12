@@ -28,8 +28,17 @@ namespace EBAUExercise.Models
 			pTotalAmount += inpCost;
 		}
 		
-		public DateTime orderDate {get; set;}
-		public int ordersMade {get; set;}
-		public decimal totalAmount {get; set;}
+		public DateTime orderDate
+		{
+			get {return pOrderDate;}
+		}
+		public int ordersMade
+		{
+			get {return pOrdersMade;}
+		}
+		public decimal totalAmount
+		{
+			get {return pTotalAmount;}
+		}
 	}
 }

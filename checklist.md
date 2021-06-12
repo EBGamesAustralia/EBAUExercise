@@ -12,7 +12,7 @@
 	- [ ] Query order totals by date
 	- [X] Implement report controller
 - [ ] **API front-end**
-	- [ ] Structure
+	- [X] Structure
 	- [ ] Functionality
 	- [ ] Styling
 - [ ] Submit

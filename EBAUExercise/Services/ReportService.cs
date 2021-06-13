@@ -22,7 +22,7 @@ namespace EBAUExercise.Services
         {
             var dataset = _sampleDataRepository.GetDataset;
 
-            var retrievedRows = 
+            IEnumerable<TotalCustomerRow> retrievedRows = 
             from individualOrderObject in dataset
             group individualOrderObject by individualOrderObject.CustomerId into customerOrderGroup
             select new TotalCustomerRow
@@ -38,12 +38,21 @@ namespace EBAUExercise.Services
         /// <summary>
         /// Build and output a list of data that shows the number of orders by date and a sum of 'order total'.
         /// </summary>
-        private void StoreDailyReport()
+        public IEnumerable<TotalDateRow> StoreDailyReport()
         {
             var dataset = _sampleDataRepository.GetDataset;
 
+            IEnumerable<TotalDateRow> retrievedRows =
+            from individualOrderObject in dataset
+            group individualOrderObject by individualOrderObject.OrderDate.ToString("dd/MM/yyyy") into orderDateGroup
+            select new TotalDateRow
+            {
+                orderDate = orderDateGroup.Key,
+                ordersMade = orderDateGroup.Count(),
+                totalAmount = (from indOrder in orderDateGroup select indOrder.OrderTotal).Sum()
+            };
 
-
+            return retrievedRows;
         }
     }
 }

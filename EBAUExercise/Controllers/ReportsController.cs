@@ -29,9 +29,12 @@ namespace EBAUExercise.Controllers
         }
 		
 		[HttpGet("dates")]
-        public List<TotalDateRow> GetTotalDatesReport()
+        public IEnumerable<TotalDateRow> GetTotalDatesReport()
         {
-            List<TotalDateRow> resultSet = new List<TotalDateRow>();
+            SampleDataRepository x = new SampleDataRepository();
+            ReportService y = new ReportService(x);
+            IEnumerable<TotalDateRow> resultSet = y.StoreDailyReport();
+
             return resultSet;
         }
 	}

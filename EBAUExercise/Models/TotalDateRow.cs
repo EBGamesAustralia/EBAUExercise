@@ -4,20 +4,20 @@ namespace EBAUExercise.Models
 {
 	public class TotalDateRow
 	{
-		private DateTime pOrderDate;
+		private string pOrderDate;
 		private int pOrdersMade = -1;
 		private decimal pTotalAmount = -1;
 		
 		public TotalDateRow(DateTime ordDate, decimal baseAmount)
 		{
-			pOrderDate = ordDate;
+			pOrderDate = stringifyDate(ordDate);
 			pOrdersMade = 1;
 			pTotalAmount = baseAmount;
 		}
 		
 		public TotalDateRow(DateTime inpDate, int inpCount, decimal inpTotal)
 		{
-			pOrderDate = inpDate;
+			pOrderDate = stringifyDate(inpDate);
 			pOrdersMade = inpCount;
 			pTotalAmount = inpTotal;
 		}
@@ -27,8 +27,15 @@ namespace EBAUExercise.Models
 			pOrdersMade += 1;
 			pTotalAmount += inpCost;
 		}
+
+
+		private string stringifyDate(DateTime dtObject)
+		{
+			string res = dtObject.ToString("dd/MM/yyyy");
+			return res;
+		}
 		
-		public DateTime orderDate
+		public string orderDate
 		{
 			get {return pOrderDate;}
 		}

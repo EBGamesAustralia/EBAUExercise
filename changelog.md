@@ -1,6 +1,4 @@
 # Changelog
 
-**./EBAUExercise/Controllers/ReportsController.cs**
-* Added global variables for:
-	* SampleDataRepository
-	* ReportService
+* Added scrolling to front-end output.
+* This mainly affects the 'Report' queries where output can potentially overflow.

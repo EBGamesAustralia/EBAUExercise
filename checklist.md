@@ -15,4 +15,4 @@
 	- [X] Structure
 	- [X] Functionality
 	- [X] Styling
-- [ ] Submit
+- [X] Submit

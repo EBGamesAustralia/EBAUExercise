@@ -1,14 +1,6 @@
 # Changelog
 
-**./EBAUExercise/Models/TotalDateRow.cs**
-* The 'orderDate' property is now a string.
-	* Converted from raw DateTime object.
-	* Uses the format as shown in example output: "dd/MM/yyyy" (eg. 15/01/2021)
-	* Input parameters remain unchanged.
-* Wrote private method to convert DateTime object to date string.
-	* Used by both constructors.
-
-
-**./EBAuExercise/wwwroot/index.html**
-* When the 'Report 2' results are displayed, a short date string is displayed as opposed to the full timestamp.
-* Formatting is handled server-side as described above.
+* Restructured 'CustomerOrder' class in line with the row objects.
+	* Private properties
+	* Public 'get' properties.
+* While the private property names may be different, the public property names remain unchanged until further notice for legacy reasons.

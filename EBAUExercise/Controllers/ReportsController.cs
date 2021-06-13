@@ -5,9 +5,6 @@ using EBAUExercise.Services;
 using EBAUExercise.Repository;
 using EBAUExercise.Models;
 
-//PlaceholderDataRepository.setTotalCustomerRows();
-//PlaceholderDataRepository.setTotalDateRows();
-
 namespace EBAUExercise.Controllers
 {
 	[ApiController]
@@ -24,15 +21,15 @@ namespace EBAUExercise.Controllers
         [HttpGet("customers")]
         public List<TotalCustomerRow> GetTotalCustomersReport()
         {
-            PlaceholderDataRepository.setTotalCustomerRows();
-            return PlaceholderDataRepository.customerQuery;
+            List<TotalCustomerRow> resultSet = new List<TotalCustomerRow>();
+            return resultSet;
         }
 		
 		[HttpGet("dates")]
         public List<TotalDateRow> GetTotalDatesReport()
         {
-            PlaceholderDataRepository.setTotalDateRows();
-            return PlaceholderDataRepository.dateQuery;
+            List<TotalDateRow> resultSet = new List<TotalDateRow>();
+            return resultSet;
         }
 	}
 }

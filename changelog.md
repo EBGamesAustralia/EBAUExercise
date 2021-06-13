@@ -1,6 +1,11 @@
 # Changelog
 
-* Restructured 'CustomerOrder' class in line with the row objects.
-	* Private properties
-	* Public 'get' properties.
-* While the private property names may be different, the public property names remain unchanged until further notice for legacy reasons.
+**./EBAUExercise/Controllers/ReportsController.cs**
+* Removed commented out calls to 'PlaceholderDataRepository'
+* Query endpoints return empty lists.
+
+---
+
+**./EBAUExercise/wwwroot/index.html**
+* Report queries display empty results.
+* Table rendering itself is unchanged.

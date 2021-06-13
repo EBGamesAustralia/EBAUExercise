@@ -1,4 +1,8 @@
-﻿using EBAUExercise.Repository;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using EBAUExercise.Repository;
+using EBAUExercise.Models;
 
 namespace EBAUExercise.Services
 {
@@ -14,12 +18,21 @@ namespace EBAUExercise.Services
         /// <summary>
         /// Build and output a list of data that breaks down the data by customer id, taking count of orders and summing 'order total'.
         /// </summary>
-        private void CustomerReport()
+        public IEnumerable<TotalCustomerRow> CustomerReport()
         {
             var dataset = _sampleDataRepository.GetDataset;
 
+            var retrievedRows = 
+            from individualOrderObject in dataset
+            group individualOrderObject by individualOrderObject.CustomerId into customerOrderGroup
+            select new TotalCustomerRow
+            {
+                customerID = customerOrderGroup.Key,
+                orderCount = customerOrderGroup.Count(),
+                totalAmount = (from custOrder in customerOrderGroup select custOrder.OrderTotal).Sum()
+            };
 
-
+            return retrievedRows;
         }
 
         /// <summary>

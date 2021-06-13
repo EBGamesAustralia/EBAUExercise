@@ -19,9 +19,12 @@ namespace EBAUExercise.Controllers
         }
 
         [HttpGet("customers")]
-        public List<TotalCustomerRow> GetTotalCustomersReport()
+        public IEnumerable<TotalCustomerRow> GetTotalCustomersReport()
         {
-            List<TotalCustomerRow> resultSet = new List<TotalCustomerRow>();
+            SampleDataRepository x = new SampleDataRepository();
+            ReportService y = new ReportService(x);
+            IEnumerable<TotalCustomerRow> resultSet = y.CustomerReport();
+
             return resultSet;
         }
 		

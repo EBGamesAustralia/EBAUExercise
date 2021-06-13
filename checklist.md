@@ -8,7 +8,7 @@
 	- [X] Save mock data
 	- [X] Reset
 - [ ] **Reports**
-	- [ ] Query order totals by customer
+	- [X] Query order totals by customer
 	- [ ] Query order totals by date
 	- [X] Implement report controller
 - [X] **API front-end**

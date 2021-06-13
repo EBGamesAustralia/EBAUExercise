@@ -12,16 +12,19 @@ namespace EBAUExercise.Repository
 		
 		public static void setTotalCustomerRows()
 		{
+			/*
 			TotalCustomerRow rowA = new TotalCustomerRow(5, 2, 50);
 			TotalCustomerRow rowB = new TotalCustomerRow(19, 1, 10);
 
 			customerRows.Clear();
 			customerRows.Add(rowA);
 			customerRows.Add(rowB);
+			*/
 		}
 
 		public static void setTotalDateRows()
 		{
+			/*
 			DateTime fifteen = new DateTime(2021, 1, 15);
 			DateTime sixteen = new DateTime(2021, 1, 16);
 
@@ -31,6 +34,7 @@ namespace EBAUExercise.Repository
 			dateRows.Clear();
 			dateRows.Add(rowA);
 			dateRows.Add(rowB);
+			*/
 		}
 
 		public static List<TotalCustomerRow> customerQuery

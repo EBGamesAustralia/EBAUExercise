@@ -1,4 +1,6 @@
 # Changelog
 
-**./EBAUExercise/Repository/PlaceholderDataRepository.cs**
-* Deleted file
+**./EBAUExercise/Controllers/ReportsController.cs**
+* Added global variables for:
+	* SampleDataRepository
+	* ReportService

@@ -7,11 +7,16 @@ using EBAUExercise.Models;
 
 namespace EBAUExercise.Controllers
 {
+
 	[ApiController]
     [Route("[controller]")]
+    
     public class ReportsController : ControllerBase
 	{
-		private readonly DoWorkService _doWorkService;
+		public static SampleDataRepository orderTable = new SampleDataRepository();
+        public static ReportService orderQueries = new ReportService(orderTable);
+        
+        private readonly DoWorkService _doWorkService;
 
         public ReportsController(DoWorkService doWorkService)
         {
@@ -21,20 +26,14 @@ namespace EBAUExercise.Controllers
         [HttpGet("customers")]
         public IEnumerable<TotalCustomerRow> GetTotalCustomersReport()
         {
-            SampleDataRepository x = new SampleDataRepository();
-            ReportService y = new ReportService(x);
-            IEnumerable<TotalCustomerRow> resultSet = y.CustomerReport();
-
+            IEnumerable<TotalCustomerRow> resultSet = orderQueries.CustomerReport();
             return resultSet;
         }
 		
 		[HttpGet("dates")]
         public IEnumerable<TotalDateRow> GetTotalDatesReport()
         {
-            SampleDataRepository x = new SampleDataRepository();
-            ReportService y = new ReportService(x);
-            IEnumerable<TotalDateRow> resultSet = y.StoreDailyReport();
-
+            IEnumerable<TotalDateRow> resultSet = orderQueries.StoreDailyReport();
             return resultSet;
         }
 	}

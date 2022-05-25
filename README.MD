@@ -1,7 +1,7 @@
 ﻿
 # EB Games Australia Developer Exercise
 
-In this solution there is a small .NET 5 ASP .NET Core application.
+In this solution there is a small .NET 6 ASP .NET Core application.
 
 There is currently a small issue in the application preventing it from compiling, the first step is to identify the issue and fix the compilation error.
 
